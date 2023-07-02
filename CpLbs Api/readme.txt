@@ -1,0 +1,1 @@
+Create the necessary directories for the API
