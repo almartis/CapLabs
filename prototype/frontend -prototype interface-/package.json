@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "cornerstone": "^0.1.1",
+    "cornerstone-core": "^2.6.1",
+    "cornerstone-tools": "^6.0.9",
+    "dicom-parser": "^1.8.21",
+    "math.js": "^1.1.46",
+    "matrix": "^1.0.3",
+    "ndarray": "^1.0.19",
+    "three": "^0.151.3"
+  },
+  "devDependencies": {
+    "vite": "^4.3.1"
+  },
+  "name": "capLabs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite --host"
+  },
+  "author": "Simpore Juste Kevin",
+  "license": "MIT",
+  "description": ""
+}

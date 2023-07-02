@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    
+    <meta charset="utf-8"/>
+    <meta name="Author" content="SIMPORE Juste Kevin"/>
+    <meta name="email" content="simporekevin07@gmail.com"/>
+
+    <link rel="stylesheet" href="./index.css"/>
+
+  </head>
+
+  <!-- ############### By Justus ############### -->
+  
+  <body>
+
+    <div class="spacing"></div>
+    
+    <header>
+      <img src="./caplabs_logo.png" alt="CapLabs Logo"/>
+    </header>
+
+    <div id="viewport">
+
+      <div class="container">
+
+	<div id="axial"
+	     class="views">
+
+	  <div class="canv">
+	    <img id="axial_view" src=""/>
+	  </div>
+
+	  <label for="axial_slicer">Axial slicer:</label>
+	  <input type="range" min="0" max="600" step="1" value="0" id="axial_slicer"/>
+	  <div>Value: <span id="axVal">0</span></div>
+	  
+	</div>
+
+	<div id="coronal"
+	     class="views">
+
+	  <div class="canv">
+	    <img id="coronal_view" src=""/>
+	  </div>
+	  
+	  <label for="coronal_slicer">Coronal slicer:</label>
+	  <input type="range" min="0" max="600" step="1" value="0" id="coronal_slicer"/>
+	  <div>Value: <span id="corVal">0</span></div>
+	  
+	</div>
+	
+      </div>
+      
+      <div class="container">
+
+	<div id="sagital"
+	     class="views">
+
+	  <div class="canv">
+	    <img id="sagital_view" src=""/>
+	  </div>
+	  
+	  <label for="sagital_slicer">Sagital slicer:</label>
+	  <input type="range" min="0" max="600" step="1" value="0" id="sagital_slicer"/>
+	  <div>Value: <span id="sagVal">0</span></div>
+
+	</div>
+	
+	<div id="configs"
+	     class="views">
+
+	  <div>
+	    <label for="dcmpack" class="inline_elm">Dicom data:</label>
+	    <select id="dcmpack">
+	      <option value="" selected></option>
+	      <option value="pack1">Pack 1</option>
+	      <option value="pack2">Pack 2</option>
+	      <option value="pack3">Pack 3</option>
+	    </select>
+	  </div> <br/>
+
+	  <div id="settings_3d">
+	    <label for="seg_check" class="inline_elm">Segmentation:</label>
+	    <input type="checkbox" id="seg_check"/><br/><br/>
+
+	    <div id="table">
+	      
+	      <div class="rows">
+		<label for="min_hu" class="cells">Lower HU:</label>
+		<input id="min_hu" class="reduce cells" value=""/>	
+	      </div>
+
+	      <div class="rows">
+		<label for="max_hu" class="cells">Greater HU:</label>
+		<input id="max_hu" class="reduce cells" value=""/><br/>
+	      </div>
+
+	    </div><br/>
+
+	    <label for="level" class="inline_elm" value="">Suface level:</label>
+	    <input id="level"/>
+
+	    <div id="gen3d_container">
+	      <input id="process" type="button" value="Process data"/><br/><br/> <br/><br/>
+	      <input id="gen3d" type="button" value="Generate a 3D stl file"/>
+	    </div>
+	    
+	  </div>
+
+	  <div id="stl_url">
+	    <a id="link">The download link of the stl file will appear here!</a>
+	  </div>
+	  
+	</div>
+	
+      </div>
+      
+    </div>
+
+    <script src="./index.js"></script>
+
+  </body>
+
+</html>
